@@ -1,0 +1,16 @@
+version: '5.7'
+
+services:
+
+  mysql:
+    image: mysql
+    platform: linux/amd64
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_HOST: localhost
+      MYSQL_ROOT_PASSWORD: 0721
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: 0000
